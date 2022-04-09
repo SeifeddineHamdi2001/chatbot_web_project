@@ -1,0 +1,531 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What help you provide?", "How you can be helpful?"],
+         "responses": ["I can recommend you the software adequate for ur use or the perfect laptop based on your preferences"],
+         "context": [""]
+        },
+        {"tag": "Programming_languages",
+             "patterns": ["list for me the programming languages", "what are the programming languages ?"],
+         "responses": ["1 python,2 javascript,3 java,4 C#,5 C,6 C++,7 Go,8 R,9 Swift,10 PHP"],
+         "context": [""]
+        },
+        {"tag": "Programming_languages_definition",
+             "patterns": ["can u tell more about programming languages?", "what is the definition of a programming languages?", "i want to know about programming languages" ],
+         "responses": ["A programming language is any set of rules that converts strings, or graphical program elements in the case of visual programming languages, to various kinds of machine code output. Programming languages are one kind of computer language, and are used in computer programming to implement algorithms"],
+         "context": [""]
+        },
+        {"tag": "Programming_languages_types",
+             "patterns": ["what are the types of programming languages?,is there a different type of programming languages ?" ],
+         "responses": ["Procedural Programming Language,Functional Programming Language,Scripting Programming Language,Logic Programming Language,Object-Oriented Programming Language."],
+         "context": [""]
+        },
+        {"tag": "Python_definition",
+             "patterns": ["can u tell more about python?", "what is python ?", "i want to know about python" ],
+         "responses": ["Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small- and large-scale projects"],
+         "context": [""]
+        },
+        {"tag": "Python_frameworks",
+         "patterns": ["what are the frameworks for python?","Frameworks python for development"],
+         "responses": ["AIOHTTP,Bottle,CherryPy,CubicWeb,Dash,Django,Falcon,Flask,Giotto,Growler"],
+         "context": [""]
+        },
+        {"tag": "javascript_definition",
+             "patterns": ["can u tell more about javascript?", "what is javascript ?", "i want to know about javascript" ],
+         "responses": ["JavaScript is a high-level programming language that follows the ECMAScript standard. It was originally designed as a scripting language for websites but became widely adopted as a general-purpose programming language, and is currently the most popular programming language in use.[1] JavaScript is usually found running in a web browser as interactive or automated content, ranging from popup messages and live clocks to large web applications. JavaScript is also commonly used in server-side programming through platforms like Node.js,[2] or embedded in non-JavaScript applications where the base programming language lacks the high-level functionality that JavaScript offers"],
+         "context": [""]
+        },
+        {"tag": "javascript_frameworks",
+         "patterns": ["what are the frameworks for javascript?","javascript Frameworks  for development"],
+         "responses": ["Angular,React,Vue.js,ember.js,meteor,mithril,node.js,Polymer"],
+         "context": [""]
+        },
+        {"tag": "java_definition",
+             "patterns": ["can u tell more about java?", "what is java ?", "i want to know about java" ],
+         "responses": ["Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA),[17] meaning that compiled Java code can run on all platforms that support Java without the need to recompile"],
+         "context": [""]
+        },
+        {"tag": "java_frameworks",
+         "patterns": ["what are the frameworks for java?","java Frameworks  for development"],
+         "responses": ["spring,hibernate,jsf,GWT,Struts,Blade,Play,vaadin,Grails,DropWizard"],
+         "context": [""]
+        },
+        {"tag": "csharp_definition",
+             "patterns": ["can u tell more about C#?", "what is C# ?", "i want to know about C#" ],
+         "responses": ["C# is an object-oriented programming language from Microsoft that aims to combine the computing power of C++ with the programming ease of Visual Basic. C# is based on C++ and contains features similar to those of Java"],
+         "context": [""]
+        },
+        {"tag": "csharp_frameworks",
+         "patterns": ["what are the frameworks for C#?","C# Frameworks  for development"],
+         "responses": ["ASP.NET web Forms,.NET,Accord.NET Framework,ASP.NET,ASP.NET Core,ASP.NET MVC,Mono,IdentityServer"],
+         "context": [""]
+        },
+        {"tag": "c_definition",
+             "patterns": ["can u tell more about c?", "what is c ?", "i want to know about c" ],
+         "responses": ["C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system. By design, C provides constructs that map efficiently to typical machine instructions. It has found lasting use in applications previously coded in assembly language. Such applications include operating systems and various application software for computer architectures that range from supercomputers to PLCs and embedded systems"],
+         "context": [""]
+        },
+        {"tag": "c_frameworks",
+         "patterns": ["what are the frameworks for c?","c Frameworks  for development"],
+         "responses": ["facil.io,Duda,Kore"],
+         "context": [""]
+        },
+        {"tag": "c++_definition",
+             "patterns": ["can u tell more about c++?", "what is c++ ?", "i want to know about c++" ],
+         "responses": ["C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or C with Classes. The language has expanded significantly over time, and modern C++ now has object-oriented, generic, and functional features in addition to facilities for low-level memory manipulation. It is almost always implemented as a compiled language, and many vendors provide C++ compilers, including the Free Software Foundation, LLVM, Microsoft, Intel, Oracle, and IBM, so it is available on many platform"],
+         "context": [""]
+        },
+        {"tag": "c++_frameworks",
+         "patterns": ["what are the frameworks for c++?","c++ Frameworks  for development"],
+         "responses": [".Net Framework,.Net core"],
+         "context": [""]
+        },
+        {"tag": "Go_definition",
+             "patterns": ["can u tell more about Go?", "what is Go ?", "i want to know about Go" ],
+         "responses": ["Go is a statically typed, compiled programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson. Go is syntactically similar to C, but with memory safety, garbage collection, structural typing, and CSP-style concurrency. The language is often referred to as Golang because of its former domain name, golang.org, but the proper name is Go"],
+         "context": [""]
+        },
+        {"tag": "Go_frameworks",
+         "patterns": ["what are the frameworks for Go?","Go Frameworks  for development"],
+         "responses": ["gin,beego,echo,kit,fasthttp"],
+         "context": [""]
+        },
+        {"tag": "R_definition",
+             "patterns": ["can u tell more about R?", "what is R ?", "i want to know about R" ],
+         "responses": ["R is a programming language for statistical computing and graphics supported by the R Core Team and the R Foundation for Statistical Computing. Created by statisticians Ross Ihaka and Robert Gentleman, R is used among data miners and statisticians for data analysis and developing statistical software. Users have created packages to augment the functions of the R language"],
+         "context": [""]
+        },
+        {"tag": "R_frameworks",
+         "patterns": ["what are the frameworks for R?","R Frameworks  for development"],
+         "responses": ["this language does not have any frameworks"],
+         "context": [""]
+        },
+        {"tag": "swift_definition",
+             "patterns": ["can u tell more about swift?", "what is swift ?", "i want to know about swift" ],
+         "responses": ["C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system. By design, C provides constructs that map efficiently to typical machine instructions. It has found lasting use in applications previously coded in assembly language. Such applications include operating systems and various application software for computer architectures that range from supercomputers to PLCs and embedded systems"],
+         "context": [""]
+        },
+        {"tag": "swift_frameworks",
+         "patterns": ["what are the frameworks for swift?","swift Frameworks  for development"],
+         "responses": ["quick,vapor,SwiftMonkey,kitura,SwiftyForm,Zip,SwiftShell,Chatto,SwiftyOnboard,FormValidatorSwift,PhoneNumberKit,Postal,GzipSwift,SwiftyDraw,SwiftCLI"],
+         "context": [""]
+        },
+        {"tag": "PHP_definition",
+             "patterns": ["can u tell more about PHP?", "what is PHP ?", "i want to know about PHP" ],
+         "responses": ["PHP is a general-purpose scripting language geared toward web development.It was originally created by Danish-Canadian programmer Rasmus Lerdorf in 1994.The PHP reference implementation is now produced by The PHP Group.PHP originally stood for Personal Home Page,but it now stands for the recursive initialism PHP: Hypertext Preprocessor"],
+         "context": [""]
+        },
+        {"tag": "PHP_frameworks",
+         "patterns": ["what are the frameworks for PHP?","PHP Frameworks  for development"],
+         "responses": ["Laravel,CodeIgniter,Symfony,CakePHP,Yii,Zend Framework,Phalcon,Slim,PHPixie"],
+         "context": [""]
+        },
+       {"tag": "AIOHTTP_framework_definition",
+         "patterns": ["tell me more about AIOHTTP","what is AIOHTTP","i want to learn more about AIOHTTP","give the definition of AIOHTTP"],
+         "responses": ["Asynchronous framework AIOHTTP is a Python framework that relies heavily on Python 3.5+ features, such as async & awaits. The Python framework makes use of Python’s asyncio library, and is hence an asynchronous framework. In addition to being a server web framework, AIOHTTP can also serve as a client framework. It provides a request object and router to enable the redirection of queries to functions developed to handle the same"],
+         "context": [""]
+        },
+       {"tag": "Bottle_framework_definition",
+         "patterns": ["tell me more about Bottle","what is Bottle","i want to learn more about Bottle","give the definition of Bottle"],
+         "responses": ["Microframework Bottle creates a single source file for every application developed using it. It is one of the best python web framework.The microframework for Python was originally developed for building APIs. Other than the Python Standard Library, Bottle has no dependencies required for crafting small web applications. One of the most important advantages of using Bottle is that it allows developers to work closer to the hardware. In addition to building simplistic personal-use apps, Bottle is an apt fit for learning the organization of web frameworks and prototyping"],
+         "context": [""]
+        },
+       {"tag": "CherryPy_framework_definition",
+         "patterns": ["tell me more about CherryPy","what is CherryPy","i want to learn more about CherryPy","give the definition of CherryPy"],
+         "responses": ["Microframework CherryPy is a popular open-source, object-oriented Python framework that follows a minimalistic approach. The micro-framework is one of the oldest Python frameworks, debuting in the June of 2002"],
+         "context": [""]
+        },
+
+    {"tag": "CubicWeb_framework_definition",
+         "patterns": ["tell me more about CubicWeb","what is CubicWeb","i want to learn more about CubicWeb","give the definition of CubicWeb"],
+         "responses": ["Full-stack framework Developed and curated by Logilab, CubicWeb is a free-to-use, semantic, open-source, Python-based web framework. Based on the data model, CubicWeb requires to have the same defined in order to develop a functional application"],
+         "context": [""]
+        },
+        {"tag": "Dash_framework_definition",
+         "patterns": ["tell me more about Dash","what is Dash","i want to learn more about Dash","give the definition of Dash"],
+         "responses": ["Microframework Dash is an open-source Python-based framework for building analytical web applications. It is an ideal Python framework for data scientists that aren’t much into the mechanics of web development"],
+         "context": [""]
+        },
+        {"tag": "Django_framework_definition",
+         "patterns": ["tell me more about Django","what is Django","i want to learn more about Django","give the definition of Django"],
+         "responses": ["Full-stack framework Django is one of the most beloved web development frameworks for developing Python applications. In fact, it ended up being one of the top 10 web development frameworks of 2022. Django framework follows the DRY (Don’t Repeat Yourself) principle."],
+         "context": [""]
+        },
+        {"tag": "Falcon_framework_definition",
+         "patterns": ["tell me more about Falcon","what is Falcon","i want to learn more about Falcon","give the definition of Falcon"],
+         "responses": ["Microframework Aimed at rapidly building web APIs, Falcon is another widely used Python framework. Unlike other Python frameworks that require loading a lot of dependencies for building HTTP APIs, Falcon allows developers to build a cleaner design that enables HTTP and REST architectures"],
+         "context": [""]
+        },
+         {"tag": "Flask_framework_definition",
+         "patterns": ["tell me more about Flask","what is Flask","i want to learn more about Flask","give the definition of a Flask"],
+         "responses": ["Microframework Available under the BSD license, Flask is another popular Python framework. Inspired by the Sinatra Ruby framework, the microframework requires Jinja2 template and Werkzeug WSGI toolkit. Thanks to its lightweight and modular design, Flask is readily adaptable"],
+         "context": [""]
+        },
+         {"tag": "Giotto_framework_definition",
+         "patterns": ["tell me more about Giotto","what is Giotto","i want to learn more about Giotto","give the definition of a Giotto"],
+         "responses": ["Full-stack framework Based on the Model View Controller pattern, Giotto is an application framework for Python. In order to allow web designers, web developers, and system admins to work independently, Giotto separates Model, View, and Controller elements in order"],
+          "context": [""]
+        },
+          {"tag": "Growler_framework_definition",
+          "patterns":["tell me more about Growler","what is Growler","i want to learn more about Growler","give the definition of Growler"],
+          "responses":[" Asynchronous framework Inspired by the NodeJS and the Express/Connect frameworks, Growler is a micro web framework written atop the Python’s asyncio library"],
+           "context": [""]
+        },
+        {"tag": "Angular_framework_definition",
+         "patterns": ["tell me more about Angular","what is Angular","i want to learn more about Angular","give the definition of Angular"],
+         "responses": ["One of the most powerful, efficient, and open-source JavaScript frameworks is Angular. Google operates this framework and is implemented to use for developing a Single Page Application (SPA). It extends the HTML into the application and interprets the attributes to perform data binding."],
+         "context": [""]
+        },
+       {"tag": "React_framework_definition",
+         "patterns": ["tell me more about React","what is React","i want to learn more about React","give the definition of React"],
+         "responses": ["Created by Facebook, the React framework has earned popularity within a short period. It is used to develop and operate the dynamic User Interface of the web pages with high incoming traffic. It makes the use of a virtual DOM, and hence, the integration of the same with any application is more straightforward."],
+         "context": [""]
+        },
+       {"tag": "Vue.js_framework_definition",
+         "patterns": ["tell me more about vue.js","what is vue.js","i want to learn more about vue.js","give the definition of vue.js"],
+         "responses": ["Though developed in the year 2016, this JavaScript framework has already made its way into the market and has proven its worth by offering various features. Its dual integration mode is one of the most attractive features for creating high-end SPA or Single Page Application. It is a much reliable platform for developing cross-platform."],
+         "context": [""]
+        },
+
+    {"tag": "Ember.js_framework_definition",
+         "patterns": ["tell me more about Ember.js","what is Ember.js","i want to learn more about Ember.js","give the definition of Ember.js"],
+         "responses": ["Though developed in the year 2016, this JavaScript framework has already made its way into the market and has proven its worth by offering various features. Its dual integration mode is one of the most attractive features for creating high-end SPA or Single Page Application. It is a much reliable platform for developing cross-platform."],
+         "context": [""]
+        },
+        {"tag": "Meteor_framework_definition",
+         "patterns": ["tell me more about Meteor","what is Meteor","i want to learn more about Meteor","give the definition of Meteor"],
+         "responses": ["Meteor's application area serves the name itself since it is varied as it covers almost the significant portion of the software development. Uses of this framework include significant areas like back-end development, management of the database, business logic, and rendering of the front-end."],
+         "context": [""]
+        },
+        {"tag": "Mithril_framework_definition",
+         "patterns": ["tell me more about Mithril","what is Mithril","i want to learn more about Mithril","give the definition of Mithril"],
+         "responses": ["Mithril is a client-side JavaScript framework that is used primarily in developing the Single Page Applications. As there are no derived functions from a base class, the framework's implementation is more straightforward.It's small, fast and provides routing and XHR utilities out of the box. It has a few features similar to React."],
+         "context": [""]
+        },
+        {"tag": "node.js_framework_definition",
+         "patterns": ["tell me more about Node.js","what is Node.js","i want to learn more about Node.js","give the definition of Node.js"],
+         "responses": ["Node.js is a server-side JavaScript run-time environment, which works on cross platforms and is open-source. The framework is capable of driving asynchronous I/O with its event-driven architecture. It works in the JavaScript Runtime environment and shows JAVA's similar properties like threading, packaging, o forming loops."],
+         "context": [""]
+        },
+         {"tag": "Polymer_framework_definition",
+         "patterns": ["tell me more about Polymer","what is Polymer","i want to learn more about Polymer","give the definition of a Polymer"],
+         "responses": ["The polymer is an open-source JavaScript library developed by Google, which can create the website's elements without going into a complex level. Also, it supports both one-way and two-way data binding, hence making a more extensive application area."],
+         "context": [""]
+        },
+         {"tag": "Aurelia_framework_definition",
+         "patterns": ["tell me more about Aurelia","what is Aurelia","i want to learn more about Aurelia","give the definition of a Aurelia"],
+         "responses": ["Aurelia framework is the latest version of JavaScript, which can be used to implement any interface. It is the next generation of the framework for developing far more robust websites. The framework of Aurelia can extend the HTML for various purposes, including data binding. Also, its modern architecture ensures that the purpose of toll is for interpretation client-side and server-side at a time."],
+          "context": [""]
+        },
+          {"tag": "Backbone.js_framework_definition",
+          "patterns":["tell me more about Backbone","what is Backbone","i want to learn more about Backbone","give the definition of Backbone"],
+          "responses":["It is one of the most popular JavaScript frameworks. It is effortless to understand and learn. It can be used to create Single Page Applications. The development of this framework involves the idea that all the server-side functions must flow through an API, which would help achieve complex functionalities by writing less code."],
+           "context": [""]
+        },
+        {"tag": "spring_framework_definition",
+         "patterns": ["tell me more about spring","what is spring","i want to learn more about spring","give the definition of spring"],
+         "responses": ["Spring is a very lightweight implementation of the Java framework, usable for pretty much any type of Java project. It’s a modular framework that you could use for any level or layer of a project. What makes it stick out is the fact that you can use it to work on not just one layer of a project but also the entire scope."],
+         "context": [""]
+        },
+       {"tag": "Hibernate_framework_definition",
+         "patterns": ["tell me more about Hibernate","what is Hibernate","i want to learn more about Hibernate","give the definition of Hibernate"],
+         "responses": ["Hibernate is an object-relational mapping (ORM) framework that makes common data handling mismatch cases a thing of the past. If you’re always working with relational databases, the Hibernate ORM framework could easily become your staple."],
+         "context": [""]
+        },
+       {"tag": "jsf_framework_definition",
+         "patterns": ["tell me more about JSF","what is JSF","i want to learn more about JSF","give the definition of JSF"],
+         "responses": ["The Oracle-built, stable framework comes with a component-based MVC environment to create beautiful “faces” for Java applications. It’s packed to the brim with libraries that allow developers to experiment with the front end—without introducing other frameworks for that part."],
+         "context": [""]
+        },
+
+    {"tag": "GWT_framework_definition",
+         "patterns": ["tell me more about Google Web ToolKit","what is GWT","i want to learn more about Google Web ToolKit","give the definition of GWT"],
+         "responses": ["As can be expected from a Google product, GWT is open source. The main reason many developers’ work starts with GWT is that it’s easy to make beautiful UIs with little knowledge of front-end scripting languages. It basically turns Java code into browser-friendly packages."],
+         "context": [""]
+        },
+        {"tag": "Struts_framework_definition",
+         "patterns": ["tell me more about Struts","what is Struts","i want to learn more about Struts","give the definition of Struts"],
+         "responses": ["Struts is an Apache-run enterprise-level framework perfect for web developers. It’s feature-rich and comes in two versions: Struts 1 and 2. The most widely used is Struts 2, which basically extends the first version with everything that comes with OpenSymphony web framework tools."],
+         "context": [""]
+        },
+        {"tag": "Blade_framework_definition",
+         "patterns": ["tell me more about Blade","what is Blade","i want to learn more about Blade","give the definition of Blade"],
+         "responses": ["The Blade framework is a very lightweight fork from the larger Let’s Blade project. If you’re predominantly a solo programmer and speed is of the essence, Blade will have you making apps in no time."],
+         "context": [""]
+        },
+        {"tag": "Play_framework_definition",
+         "patterns": ["tell me more about Play","what is Play","i want to learn more about Play","give the definition of Play"],
+         "responses": ["The Play framework was created with the ease of web application development in mind. To use Play, one only needs a web browser, any text editor, and some inkling of how the command interface works on any OS. Because it’s so lightweight and because it has seamless NoSQL compatibility, it’s perfect for mobile development as well."],
+         "context": [""]
+        },
+         {"tag": "Vaadin_framework_definition",
+         "patterns": ["tell me more about Vaadin","what is Vaadin","i want to learn more about Vaadin","give the definition of a Vaadin"],
+         "responses": ["With Vaadin, a developer can focus on using pure Java to build apps, and the framework will handle the interface. That’s thanks to the built-in UI components that can be called as though they were functions. Like Cordova, a JavaScript framework for cross-platform development, Vaadin allows you to use a single codebase to deploy native mobile apps, as well as web or even desktop applications, after packaging."],
+         "context": [""]
+        },
+         {"tag": "Grails_framework_definition",
+         "patterns": ["tell me more about Grails","what is Grails","i want to learn more about Grails","give the definition of a Grails"],
+         "responses": ["To start with, it has markup views such that you can generate HTML code. The same applies for JSON and XML. An active community exists around Grails too. Working with the Groove language, they continuously develop plugins you can use for free to enhance your own applications. To complete the front-side development ease, GORM (a data handling toolkit) allows developers to access and work with both relational and nonrelational datasets."],
+          "context": [""]
+        },
+          {"tag": "DropWizard_framework_definition",
+          "patterns":["tell me more about DropWizard","what is DropWizard","i want to learn more about DropWizard","give the definition of DropWizard"],
+          "responses":["Probably the least concerned about bells and whistles, Dropwizard is mostly made to get things done. Developers are able to deploy quicker due to less sophistication and the abundance of tools to make applications. It’s also part of the Apache 2 project, making it open source. It too inherits the millions of users and contributors that make working with Apache projects so much more pleasurable."],
+           "context": [""]
+        },
+        {"tag": "ASP.NET Web Forms_framework_definition",
+         "patterns": ["tell me more about ASP.NET Web Forms","what is ASP.NET Web Forms","i want to learn more about ASP.NET Web Forms","give the definition of ASP.NET Web Forms"],
+         "responses": ["ASP.NET Web Forms is a web application framework and one of several programming models supported by the Microsoft ASP.NET technology. Web Forms applications can be written in any programming language which supports the Common Language Runtime, such as C# or Visual Basic."],
+         "context": [""]
+        },
+       {"tag": "IdentityServer_framework_definition",
+         "patterns": ["tell me more about IdentityServer","what is IdentityServer","i want to learn more about IdentityServer","give the definition of IdentityServer"],
+         "responses": ["IdentityServer is a free, open source OpenID Connect and OAuth 2.0 framework for ASP.NET Core."],
+         "context": [""]
+        },
+       {"tag": ".Net_framework_definition",
+         "patterns": ["tell me more about .NET","what is .NET","i want to learn more about .NET","give the definition of .NET"],
+         "responses": ["Software framework that runs primarily on Microsoft Windows. It provides a controlled programming environment where software can be developed, installed and executed on Windows-based operating systems."],
+         "context": [""]
+        },
+
+    {"tag": "Accord.Net_framework_definition",
+         "patterns": ["tell me more about CubicWeb","what is CubicWeb","i want to learn more about CubicWeb","give the definition of CubicWeb"],
+         "responses": ["Full-stack framework Developed and curated by Logilab, CubicWeb is a free-to-use, semantic, open-source, Python-based web framework. Based on the data model, CubicWeb requires to have the same defined in order to develop a functional application"],
+         "context": [""]
+        },
+        {"tag": "Asp.net_framework_definition",
+         "patterns": ["tell me more about Asp.Net","what is Asp.net","i want to learn more about Asp.Net","give the definition of Asp.Net"],
+         "responses": ["Web framework for building modern web apps and services with .NET. ASP.NET creates websites based on HTML5, CSS, and JavaScript that are simple, fast, and can scale to millions of users."],
+         "context": [""]
+        },
+        {"tag": "ASP.NET Core_framework_definition",
+         "patterns": ["tell me more about Asp.Net Core","what is Asp.Net Core","i want to learn more about Asp.Net Core","give the definition of Asp.Net Core"],
+         "responses": ["Cross-platform, high-performance, open-source framework for building modern, cloud-based, Internet-connected applications. ASP.NET Core apps can run on .NET Core or on the full .NET Framework."],
+         "context": [""]
+        },
+        {"tag": "ASP.NET MVC_framework_definition",
+         "patterns": ["tell me more about ASP.NET MVC","what is ASP.NET MVC","i want to learn more about ASP.NET MVC","give the definition of ASP.NET MVC"],
+         "responses": ["Web application framework which implements the model–view–controller (MVC) pattern. Helps build dynamic websites enabling a clean separation of concerns. ASP.NET MVC includes many features that enable fast, TDD-friendly development for creating sophisticated applications that use the latest web standards."],
+         "context": [""]
+        },
+         {"tag": "Mono_framework_definition",
+         "patterns": ["tell me more about Mono","what is Mono","i want to learn more about Mono","give the definition of a Mono"],
+         "responses": ["Implementation of Microsoft's .NET Framework based on the ECMA standards for C# and the Common Language Runtime. The stated purpose of Mono is not only to be able to run Microsoft .NET applications cross-platform, but also to bring better development tools to Linux developers."],
+         "context": [""]
+        },
+         {"tag": "kore_framework_definition",
+         "patterns": ["tell me more about kore","what is kore","i want to learn more about kore","give the definition of a kore"],
+         "responses": ["Secure web application framework for writing web APIs in C or Python"],
+          "context": [""]
+        },
+          {"tag": "Facil.io_framework_definition",
+          "patterns":["tell me more about Facil.io","what is Facil.io","i want to learn more about Facil.io","give the definition of Facil.io"],
+          "responses":[" High performance web application C framework"],
+           "context": [""]
+        },
+        {"tag": "Duda_framework_definition",
+         "patterns": ["tell me more about Facil.io","what is Facil.io","i want to learn more about Facil.io","give the definition of Facil.io"],
+         "responses": ["Event-driven and high performant web services framework"],
+         "context": [""]
+        },
+       {"tag": "gin_framework_definition",
+         "patterns": ["tell me more about gin","what is gin","i want to learn more about gin","give the definition of gin"],
+         "responses": ["The gin framework tops the list in terms of popularity due to its minimalist framework and performance. It is mostly used for building a REST API for the backend if the programmer wants to develop a single page application using a frontend framework. This framework makes use of the HTTP routers for handling the Golang traffic and is ideal for beginners along with its rich documentation provided on GitHub. It supports the most essential libraries and features which makes it the most suitable Golang framework to develop high-performance REST APIs."],
+         "context": [""]
+        },
+       {"tag": "beego_framework_definition",
+         "patterns": ["tell me more about beego","what is beego","i want to learn more about beego","give the definition of beego"],
+         "responses": ["The beego framework is used for the rapid development of REST APIs, web applications, and backend services in Golang. It is often viewed similarly to the Django web framework in Python and contains specific features of Golang such as interfaces and struct embedding. It does not require any third-party installations. It is a full-fledged Model-View-Controller framework with its own libraries and a built-in tool that helps with finding the code changes, known as the Bee Tool. "],
+         "context": [""]
+        },
+
+    {"tag": "echo_framework_definition",
+         "patterns": ["tell me more about Echo","what is Echo","i want to learn more about Echo","give the definition of Echo"],
+         "responses": ["The echo framework is another high performance, an extensible, and minimalist web framework in Golang. It has a highly optimized HTTP router with zero dynamic memory allocation that smartly prioritizes routes. It is used to build robust and scalable REST APIs, which can easily be organized into groups. It automatically installs TLS certificates from Let’s Encrypt and provides HTTP/2 support which improves the speed and provides better user experience. It also contains many built-in middlewares to use and developers can even define their own which can be set at a root, group, or route level."],
+         "context": [""]
+        },
+        {"tag": "Kit_framework_definition",
+         "patterns": ["tell me more about Kit","what is Kit","i want to learn more about Kit","give the definition of Kit"],
+         "responses": ["The kit framework is a programming toolkit for building robust, reliable, and maintainable microservices in Golang. It is a set of packages and best practices, which provide a comprehensive, robust, and trustable way of building microservices for organizations of any size. Go is a great general-purpose language, but microservices require a certain amount of specialized support."],
+         "context": [""]
+        },
+        {"tag": "fasthttp_framework_definition",
+         "patterns": ["tell me more about Fasthttp","what is Fasthttp","i want to learn more about Fasthttp","give the definition of Fasthttp"],
+         "responses": ["The fasthttp framework provides a fast HTTP server and client API which was made as an alternative to net/http due to its limits on optimization opportunities. It is optimized for speed and can easily handle more than 100K qps and more than 1M concurrent keep-alive connections on modern hardware. It is also optimized for low memory usage and provides easy connection upgrade support via RequestCtx.Hijack."],
+         "context": [""]
+        },
+        {"tag": "Quick_framework_definition",
+         "patterns": ["tell me more about Quick","what is Quick","i want to learn more about Quick","give the definition of Quick"],
+         "responses": ["Certainly, this is described as the Swift and Objective-C behavior-driven development framework. In addition, the design and creation of this particular framework depend on RSpec, Specta, and Ginkgo."],
+         "context": [""]
+        },
+         {"tag": "vapor_framework_definition",
+         "patterns": ["tell me more about vapor","what is vapor","i want to learn more about vapor","give the definition of a vapor"],
+         "responses": ["To sum up, Vapor is widely known as a web framework for the Swift programming language. In addition, it is highly suited for projects concerned with websites, API, and cloud computing because it has an amazingly expressive and simple foundation."],
+         "context": [""]
+        },
+         {"tag": "SwiftMonkey_framework_definition",
+         "patterns": ["tell me more about SwiftMonkey","what is SwiftMonkey","i want to learn more about SwiftMonkey","give the definition of a SwiftMonkey"],
+         "responses": ["Developers find this framework useful in creating randomised user input in iOS applications. It makes use of Swift 4.0 without having to depend on anything except iOS."],
+          "context": [""]
+        },
+          {"tag": " Kitura_framework_definition",
+          "patterns":["tell me more about Kitura","what is Kitura","i want to learn more about Kitura","give the definition of Kitura"],
+          "responses":["This called a web framework and server written in Swift language for the main purpose of handling web services."],
+           "context": [""]
+        },
+        {"tag": " SwiftyFORM_framework_definition",
+          "patterns":["tell me more about SwiftyFORM","what is SwiftyFORM","i want to learn more about SwiftyFORM","give the definition of SwiftyFORM"],
+          "responses":["Do you think of creating forms? SwiftyFORM is a lightweight framework for doing that. In addition, this framework depends on iOS 9+, Xcode 11+, and Swift 5.1+."],
+           "context": [""]
+        },
+        {"tag": " Zip_framework_definition",
+          "patterns":["tell me more about Zip","what is Zip","i want to learn more about Zip","give the definition of Zip"],
+          "responses":["This is a framework for Swift used in zipping and unzipping files. In addition, it’s created on top of minizip."],
+           "context": [""]
+        },
+        {"tag": " SwiftShell_framework_definition",
+          "patterns":["tell me more about SwiftShell","what is SwiftShell","i want to learn more about SwiftShell","give the definition of SwiftShell"],
+          "responses":["In short, it is simpler to describe SwiftShell as a Swift framework for shell scripting."],
+           "context": [""]
+        },
+        {"tag": " Chatto_framework_definition",
+          "patterns":["tell me more about Chatto","what is Chatto","i want to learn more about Chatto","give the definition of Chatto"],
+          "responses":["This is a lightweight framework for the Swift programming language for the main purpose of creating chat applications."],
+           "context": [""]
+        },
+        {"tag": " SwiftyOnboard_framework_definition",
+          "patterns":["tell me more about SwiftyOnboard","what is SwiftyOnboard","i want to learn more about SwiftyOnboard","give the definition of SwiftyOnboard"],
+          "responses":["You are allowed to use this simple framework to add onboarding to any iOS applications of your choice. In addition, for this framework, you will need iOS 9+ and Xcode 7.3+."],
+           "context": [""]
+        },
+        {"tag": " SwiftCLI_framework_definition",
+          "patterns":["tell me more about SwiftCLI","what is SwiftCLI","i want to learn more about SwiftCLI","give the definition of SwiftCLI"],
+          "responses":["To sum up, this is best described as a powerful Swift framework for creating CLIs."],
+           "context": [""]
+        },
+        {"tag": " SwiftyDraw_framework_definition",
+          "patterns":["tell me more about SwiftyDraw","what is SwiftyDraw","i want to learn more about SwiftyDraw","give the definition of SwiftyDraw"],
+          "responses":["In short, this is simply called a drawing framework that is created through the use of Core Graphics. In addition, it’s so simple to implement."],
+           "context": [""]
+        },
+        {"tag": " GzipSwift_framework_definition",
+          "patterns":["tell me more about GzipSwift","what is GzipSwift","i want to learn more about GzipSwift","give the definition of GzipSwift"],
+          "responses":["This is just a Swift framework with an extension of Data. In addition, it makes use of Zlib to enable gzip/gunzip Data."],
+           "context": [""]
+        },
+        {"tag": " Postal_framework_definition",
+          "patterns":["tell me more about Postal","what is Postal","i want to learn more about Postal","give the definition of Postal"],
+          "responses":["This is simply a framework for Swift language that offers help in providing access to every popular email provider."],
+           "context": [""]
+        },
+        {"tag": " PhoneNumberKit_framework_definition",
+          "patterns":["tell me more about PhoneNumberKit","what is PhoneNumberKit","i want to learn more about PhoneNumberKit","give the definition of PhoneNumberKit"],
+          "responses":["To sum up, this is best described as a powerful Swift framework for creating CLIs."],
+           "context": [""]
+        },
+        {"tag": " Laravel_framework_definition",
+          "patterns":["tell me more about Laravel","what is Laravel","i want to learn more about Laravel","give the definition of Laravel"],
+          "responses":["Introduced in 2011,Laravel has become the most popular free, open-source PHP framework in the world. Why? Because it can handle complex web applications securely, at a considerably faster pace than other frameworks. Laravel simplifies the development process by easing common tasks such as routing, sessions, caching, and authentication."],
+           "context": [""]
+        },
+        {"tag": " CodeIgniter_framework_definition",
+          "patterns":["tell me more about CodeIgniter","what is CodeIgniter","i want to learn more about CodeIgniter","give the definition of CodeIgniter"],
+          "responses":["Known for its small footprint (it’s only about 2 MB in size, including the documentation) CodeIgniter is a PHP framework suitable for developing dynamic websites. It offers numerous prebuilt modules that help with constructing robust and reusable components."],
+           "context": [""]
+        },
+        {"tag": " Symfony_framework_definition",
+          "patterns":["tell me more about Symfony","what is Symfony","i want to learn more about Symfony","give the definition of Symfony"],
+          "responses":["The Symfony framework was launched in 2005, and although it’s been in existence for much longer than other frameworks on this list, it’s a reliable and mature platform. Symfony is an extensive PHP MVC framework and the only framework known to follow PHP and web standards to the tee."],
+           "context": [""]
+        },
+        {"tag": " CakePHP_framework_definition",
+          "patterns":["tell me more about CakePHP","what is CakePHP","i want to learn more about CakePHP","give the definition of CakePHP"],
+          "responses":["If you’re looking for a toolkit that’s simple and elegant, look no further. CakePHP will help you develop visually impressive, feature-loaded websites. In addition, CakePHP is one of the easiest frameworks to learn, especially because of its CRUD framework. CakePHP hit the market in the early 2000s, and since then it’s gained better performance and many new components."],
+           "context": [""]
+        },
+        {"tag": " Yii_framework_definition",
+          "patterns":["tell me more about  Yii","what is Yii","i want to learn more about Yii","give the definition of Yii"],
+          "responses":["The Yii framework — which stands for Yes, it is! — is, in fact, simple and evolutionary. It’s a high-performance, component-based PHP framework for developing modern web applications. Yii is suitable for all kinds of web apps. For this reason, it’s a universal web programming framework."],
+           "context": [""]
+        },
+        {"tag": " Zend Framework_framework_definition",
+          "patterns":["tell me more about Zend Framework","what is Zend Framework","i want to learn more about Zend Framework","give the definition of Zend Framework"],
+          "responses":["The Zend framework is a complete object-oriented framework, and the fact that it uses features such as interfaces and inheritance makes it extendable. It was built on the agile methodology, which helps you to deliver high-quality applications to enterprise clients. Zend is highly customizable and abides by PHP best practices—an important point for developers who want to add project-specific functionalities."],
+           "context": [""]
+        },
+        {"tag": " Phalcon_framework_definition",
+          "patterns":["tell me more about Phalcon","what is Phalcon","i want to learn more about Phalcon","give the definition of Phalcon"],
+          "responses":["A full-stack PHP framework that employs the MVC web architecture design pattern, Phalcon was originally written in C and C++ and released in 2012. Since it’s delivered as a C-extension, you don’t have to worry about learning the C programming language."],
+           "context": [""]
+        },
+        {"tag": " FuelPHP_framework_definition",
+          "patterns":["tell me more about FuelPHP","what is FuelPHP","i want to learn more about FuelPHP","give the definition of FuelPHP"],
+          "responses":["FuelPHP is a flexible, full-stack PHP framework first released in 2011. Apart from supporting the MVC design pattern, it has its own version called the hierarchical model view controller. With HMVC, unlike with MVC, content doesn’t need to duplicate to show on multiple pages. As a result, it consumes less time and memory."],
+           "context": [""]
+        },
+        {"tag": " PHPixie_framework_definition",
+          "patterns":["tell me more about  PHPixie","what is  PHPixie","i want to learn more about  PHPixie","give the definition of PHPixie"],
+          "responses":["Introduced in 2012 and just like FuelPHP, PHPixie implements the HMVC design pattern. Its goal was to create a high-performance framework for read-only websites."],
+           "context": [""]
+        },
+        {"tag": "  Slim_framework_definition",
+          "patterns":["tell me more about Slim","what is Slim","i want to learn more about Slim","give the definition of Slim"],
+          "responses":["Slim is another popular PHP micro-framework that helps developers quickly create simple but powerful web applications and APIs."],
+           "context": [""]
+        },
+        {"tag": "framework_definition",
+         "patterns": ["tell me more about frameworks","what is a framework","i want to learn more about frameworks","give the definition of a framework","framework definition"],
+         "responses": ["A framework in programming is a tool that provides ready-made components or solutions that are customized in order to speed up development. A framework may include a library, but is defined by the principle of inversion of control (IoC)"],
+         "context": [""]
+        },
+        {"tag": "library_definition",
+         "patterns": ["tell me more about libraries","what is a library","i want to learn more about libraries","give me the definition of a library"],
+         "responses": [" In computer programming, a library refers to a collection of files, programs, routines, scripts, or functions that can be referenced in the programming code. These libraries are more complex than routines, optimized, and may even be designed by the same programmers behind the programming language"],
+         "context": [""]
+        },
+
+
+    {"tag": "invalid",
+         "patterns": ["Marry me","I love You","date me","chat with me","I am bored"],
+         "responses": ["Please ask object related query."],
+         "context": [""]
+        },
+    {"tag": "noans",
+         "patterns": ["why","how","when","I","you"],
+         "responses": ["Can't Understand Your Question","please elaborate your question"],
+         "context": [""]
+        },
+
+        {"tag": "name",
+         "patterns": ["what is your name?","what should I call you?"],
+         "responses": ["I'm sofos","Hey!I'm sofos"],
+         "context": [""]
+        },
+         {"tag": "about",
+         "patterns": ["how you doing?","how are you"],
+         "responses": ["Thanks For Asking!How can I help you?"],
+         "context": [""]
+        }
+   ]
+}
