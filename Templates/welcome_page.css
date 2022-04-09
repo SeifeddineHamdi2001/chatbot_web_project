@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro|Dancing+Script&display=swap');
+html
+{scroll-behavior: smooth;}
+body
+{margin:0;
+padding:0;}
+h1
+{font-size: 1.6rem;
+text-shadow: black;}
+ul
+{margin:0;
+padding:0;}
+li
+{list-style-type: none;}
+a
+{text-decoration:none;
+color:black;}
+a:hover
+{ color:rgb(252,154,0);
+font-size: 20px;}
+a:active 
+{box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),inset 2px 2px 3px rgba(0, 0, 0, .6);}
+/* NAVBAR */
+nav
+{overflow: hidden;
+background-color: #ffffff;
+position:fixed;
+width:100%;
+opacity:0.8;}
+header li 
+{float:right;
+font-size:1.2em;}
+header li a
+{text-decoration: none; 
+display:block;
+align-items: center;
+padding : 18px 16px;}
+#logo
+{font-family: 'Dancing Script',cursive;
+flex:2 2 40rem;
+font-weight:bold;  
+float:left;}
+/* ****** main******* */
+#main
+{background: url(media/main_picture.jpg) no-repeat  50% 50%;
+background-size: cover;
+padding-top:60px;
+height:680px;}
+#main_text
+{font-family: 'Dancing Script', cursive;
+text-align: left;
+padding: 50px;
+margin-left:30px ;
+color: rgb(122,189,198);
+font-size: 6em;
+text-shadow: 1px 3px 2px rgb(246,196,154);}
+#line1
+{height:2px;   
+width: 30%;
+margin-left:110px;
+background-color: white;
+box-shadow: 1px 3px 2px black;} 
+#get_started
+{border: 0;
+cursor: pointer;
+margin-top: 30px;
+margin-left: 250px;
+float:left;
+line-height:3;
+padding-left: 20px;
+font-size: 1rem;  
+text-align: center;
+color: #fff;
+text-shadow: 1px 1px 1px #000;
+border-radius: 10px;
+background-color: rgb(252,154,0);
+background-image: linear-gradient(to top left,rgba(0, 0, 0, .2),rgba(0, 0, 0, .2) 30%,rgba(0, 0, 0, 0));
+box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),inset -2px -2px 3px rgba(0, 0, 0, .6);}
+#get_started:hover
+{background-color: rgb(250,202,161);}
+#get_started:active 
+{box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),inset 2px 2px 3px rgba(0, 0, 0, .6);}
+/* ******************* FOOTER ******************** */
+footer
+{ background-color: rgb(48,64,64);
+  color: #FFFAE1;
+  padding: 20px 0 10px 0;
+  text-align: center;}
+#line2
+{ height: 1px;
+width: 75%;
+background-color: #FFFAE1;
+margin: 60px auto;}
+#copyrightEtIcons
+{display: flex;
+margin-bottom: 20px;
+padding: 0 10%;}
+#copyright
+{width: 50%;
+text-align: left;
+color: #FFFAE1;}
+#icons
+{width: 50%;
+text-align: right;}
+#icons a
+{display: inline-block;
+padding: 0 15px;
+font-size: 1.3em;
+color: #FFFAE1;}
+#icons a:hover
+{transform: scale(1.5);
+transition: 0.1s;}
+   

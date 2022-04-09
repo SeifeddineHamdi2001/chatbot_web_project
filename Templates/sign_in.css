@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro|Dancing+Script&display=swap');
+html
+{scroll-behavior: smooth;}
+body
+{margin:0;
+padding:0;}
+ul
+{margin:0;
+padding:0;}
+li
+{list-style-type: none;}
+a
+{text-decoration:none;
+color:black;}
+a:hover
+{ color:rgb(252,154,0);
+font-size: 20px;}
+a:active 
+{box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),inset 2px 2px 3px rgba(0, 0, 0, .6);}
+
+
+/* NAVBAR */
+nav
+{overflow: hidden;
+background-color: #ffffff;
+position:fixed;
+width:100%;
+opacity:0.8;}
+header li 
+{float:right;
+font-size:1.2em;}
+header li a
+{text-decoration: none; 
+display:block;
+align-items: center;
+padding : 18px 16px;}
+#logo
+{font-family: 'Dancing Script',cursive;
+flex:2 2 40rem;
+font-weight:bold;  
+float:left;
+color:rgb(122,189,198);}
+/*  main */
+#main
+{background: url(media/main_picture.jpg) no-repeat 50% 50%;
+background-size:cover;
+padding-top:60px;
+height:680px;
+margin-block-end: 10px;}
+#main_text
+{font-family: 'Dancing Script', cursive;
+text-align: center;
+padding: 20px;
+color: rgb(24, 55, 59);
+font-size: 4em;
+text-shadow: 1px 3px 2px rgb(246,196,154);}
+#formulaire
+{width:450px;
+height: 470px;
+box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+background: antiquewhite;
+margin:4% auto 0;
+text-align:  center;}
+input
+{border: none;
+width: 55%;
+padding: 15px 10px;
+margin: 1px 0;
+font-size: 1em;
+font-family: 'Advent Pro', sans-serif;
+border-radius: 8px;}
+select
+{border:none;
+width:15%;
+padding:5px 0px;}
+#sign_in
+{border: 0;
+cursor: pointer;
+margin-top: 4px;
+float:center;
+line-height: 2;
+padding: 0 20px;
+font-size: 1rem;  
+text-align: center;
+color: #fff;
+text-shadow: 1px 1px 1px #000;
+border-radius: 10px;
+background-color: rgb(122, 3, 158);
+background-image: linear-gradient(to top left,rgba(0, 0, 0, .2),rgba(0, 0, 0, .2) 30%,rgba(0, 0, 0, 0));
+box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),inset -2px -2px 3px rgba(0, 0, 0, .6);}
+#sign_in:hover
+{background-color: rgb(218, 141, 228);}
+#sign_in:active 
+{box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),inset 2px 2px 3px rgba(0, 0, 0, .6);}
+#line1
+{height:1px;   
+width: 30%;
+margin-left: 160px;
+margin-right: 50px;
+margin-top:6px ;
+background-color: rgb(48,64,64);
+box-shadow: 1px 3px 2px black;} 
+
+/* footer */
+footer
+{ background-color: rgb(48,64,64);
+  color: #FFFAE1;
+  padding: 20px 0 10px 0;
+  text-align: center;}
+#line2
+{ height: 1px;
+width: 75%;
+background-color: #FFFAE1;
+margin: 60px auto;}
+#copyrightEtIcons
+{display: flex;
+margin-bottom: 20px;
+padding: 0 10%;}
+#copyright
+{width: 50%;
+text-align: left;
+color: #FFFAE1;}
+#icons
+{width: 50%;
+text-align: right;}
+#icons a
+{display: inline-block;
+padding: 0 15px;
+font-size: 1.3em;
+color: #FFFAE1;}
+#icons a:hover
+{transform: scale(1.5);
+transition: 0.1s;}
+
+   
